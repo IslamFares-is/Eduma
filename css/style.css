@@ -1,0 +1,1410 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+html {
+    font-family: Helvetica, sans-serif !important;
+}
+body > div {
+    overflow: hidden;    
+}
+
+/* -------------------------------------------------start-header--------------------------------------------------- */
+.section1-container {
+    background-image: url(../Images/bg-home-eduma.webp);
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+    height:75rem !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow:hidden;
+}
+.section1-container > div {
+    width:100%;
+    max-width:100%;
+}
+header {
+    width:100%;
+    height:94px;
+    display: flex;
+    padding:0 2%;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+}
+
+header > div:first-of-type {
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .ul {
+    width:70%;
+}
+header ul {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li {
+    position:relative;
+}
+header ul li a {
+    color:white;
+    text-transform: uppercase;
+    font-weight:600;
+}
+
+header ul li::after {
+    content:"";
+    width:100%;
+    height:2px;
+    position:absolute;
+    bottom:-3px;
+    left:0;
+    transform:scaleX(0);
+    transform-origin: center;
+    background-color:white;
+    transition:0.3s ease-in-out;
+    -webkit-transition:0.3s ease-in-out;
+    -moz-transition:0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -o-transition:0.3s ease-in-out;
+    -webkit-transform:scaleX(0);
+    -moz-transform:scaleX(0);
+    -ms-transform:scaleX(0);
+    -o-transform:scaleX(0);
+}
+header ul li:hover::after {
+    transform:scaleX(1);
+    -webkit-transform:scaleX(1);
+    -moz-transform:scaleX(1);
+    -ms-transform:scaleX(1);
+    -o-transform:scaleX(1);
+}
+header .buy-now {
+    width:14rem;
+    height:54px;
+    background-image: linear-gradient(45deg, black, black 55%, #2E2E2E 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 5.3s ease-in-out;
+    -webkit-transition: 5.3s ease-in-out;
+    -moz-transition: 5.3s ease-in-out;
+    -ms-transition: 5.3s ease-in-out;
+    -o-transition: 5.3s ease-in-out;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+header .buy-now:hover {
+    background-image: linear-gradient(0deg, #2E2E2E, #2E2E2E 100%);
+}
+.buy-now a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color:white;
+    font-weight:600;
+    font-size:0.9;
+    text-transform: uppercase;
+
+}
+.buy-now img {
+    margin-right:1rem;
+}
+.hidden-list-icon {
+    display: none;
+}
+/* ------------------------------------------buy eduma------------------------------------------ */
+.buy-eduma {
+    display: flex;
+    justify-content: flex-start;
+    width:fit-content !important;
+    align-self: center !important;
+    position: relative;
+    
+}
+.buy-eduma .one-img {
+    margin-left:2rem;
+}
+.buy-eduma > div:last-of-type {
+    padding:45px 50px 10px 22px;
+}
+.buy-eduma {
+    color:white;
+}
+.buy-eduma .text {
+    font-size:1.4rem;
+    text-shadow: 0 4px 5px rgba(114, 114, 114, 0.274);
+}
+.buy-eduma h1 {
+    font-size:4.5rem;
+    margin:1rem 0 0;
+    text-shadow:0 5px 20px rgba(114, 114, 114, 0.274);
+}
+.buy-btn {
+    width:16rem;
+    height:4.5rem;
+    background-image: linear-gradient(to right, white 0%,white 2%,#FF9407 2%);
+    outline:1px solid white;
+    border-radius:2px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -ms-border-radius:2px;
+    -o-border-radius:2px;
+    margin-top:1.5rem;
+    box-shadow: 0 0 10px 0 rgba(114, 114, 114, 0.274);
+    position: relative;
+    z-index:1;
+}
+.buy-btn::after {
+    content:"";
+    width:136px;
+    height:147px;
+    background-image: url(../images/arrow-eduma.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:absolute;
+    right:-244px;
+    top:-76px;
+}
+
+.buy-btn a {
+    color:white;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size:1.1rem;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    z-index:3;
+}
+.buy-btn:hover {
+    animation-play-state: running;
+}
+.buy-btn:hover a {
+    color:#FF9407;
+    
+}
+.buy-btn:hover {
+    background-image: linear-gradient(to right,white 0%, white 100%);
+}
+.content > img {
+    position:absolute;
+}
+.content > img:first-of-type {
+    top:-20%;
+    left:50%;
+}
+.content > img:nth-of-type(2) {
+    top:-10%;
+    right:5%;
+}
+.content > img:nth-of-type(3) {
+    top:15%;
+    right:-10%;
+}
+.content > img:last-of-type {
+    top:30%;
+    right: -5%;
+}
+
+/* ----------------------------------------------------section-devices----------------------------------- */
+.devices {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+}
+.devices > div {
+    margin-left:3rem;
+}
+.devices > div img {
+    width:100%;
+    max-width:100%;
+}
+/* ---------------------------------------------rotate-fixed-------------------------------------------- */
+
+.rotate-fixed {
+    position:fixed;
+    top:20%;
+    right:0;
+    z-index:7;
+}
+.rotate-fixed > div {
+    width:3.5rem;
+    height:3.5rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.rotate-fixed > div a {
+    width:100%;
+    height: 100%;
+    font-size:12px;
+    display: flex;
+    justify-content: space-evenly   ;
+    align-items: center;
+    flex-direction: column;
+}
+.rotate-fixed > div img {
+    width:20px !important;
+}
+.rotate-fixed > div:first-of-type {
+    background-color:white;
+}
+.rotate-fixed > div:last-of-type {
+    background-color:#7AA93C;
+    margin-top:1rem;
+}
+.rotate-fixed > div:first-of-type p {
+    color:black;
+}
+.rotate-fixed > div:last-of-type p {
+    color:white;
+}
+.rotate-fixed > div:first-of-type img {
+    animation: spin 2.5s linear infinite;
+    -webkit-animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0)    ;
+        -webkit-transform:rotate(0)    ;
+        -moz-transform:rotate(0)    ;
+        -ms-transform:rotate(0)    ;
+        -o-transform:rotate(0)    ;
+    }
+    100% {
+        transform:rotate(180deg)    ;
+        -webkit-transform:rotate(180deg)    ;
+        -moz-transform:rotate(180deg)    ;
+        -ms-transform:rotate(180deg)    ;
+        -o-transform:rotate(180deg)    ;
+}
+    
+}
+
+/* -------------------------------------------------plugins Container------------------------------- */
+.plugins-container {
+    width:100%;
+    max-width:100%;
+    background-image: url(../Images/bg-home-eduma-02.webp);
+    background-size:cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:205px 2rem 38px;
+    margin-top:-9rem;
+}
+.plugins-container .description {
+    width:35%;
+}
+.plugins-container .description h3 {
+    font-size:3rem;
+    margin-bottom:2.5rem;
+    line-height: 4rem;
+}
+.plugins-container .description p {
+    line-height: 2rem;
+    font-size:1.1rem;
+    position: relative;
+}
+.plugins-container .description p::after {
+    content:"";
+    width:30%;
+    height:5px;
+    background-color:#ffb606;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    position:absolute;
+    bottom:-2.5rem;
+    left:0;
+}
+.plugins-container .plugins {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width:68%;
+}
+.plugins > div {
+    width:31%;
+    background-color:white;
+    padding:18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition:0.3s ease-in-out;
+    -webkit-transition:0.3s ease-in-out;
+    -moz-transition:0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -o-transition:0.3s ease-in-out;
+    margin-bottom:2rem;
+}
+.plugins > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    width:100%;
+    padding:40px;
+    transition:0.3s ease-in-out;
+    -webkit-transition:0.3s ease-in-out;
+    -moz-transition:0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -o-transition:0.3s ease-in-out;
+    margin-bottom:10px;
+}
+.plugins > div:hover {
+    box-shadow: 0 1px 5px 0 #e0e0e0;
+}
+.plugins > div:hover > div {
+    background-color: #F4F4F3;
+}
+
+.plugins > div > div a {
+    filter: drop-shadow(0 3px 2px #e0e0e0);
+    -webkit-filter: drop-shadow(0 3px 2px #e0e0e0);
+}
+
+.plugins > div > a {
+    color:#e0e0e0;
+    font-size:1.5rem;
+    transition:0.3s ease-in-out;
+    -webkit-transition:0.3s ease-in-out;
+    -moz-transition:0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -o-transition:0.3s ease-in-out;
+    font-family: 'Nunito';
+    font-weight: bold;
+    text-align: center;
+}
+
+.plugins > div:hover > a {
+    color:black;
+}
+/* -------------------------------------selling Educatoin Theme------------------------------ */
+.section-selling-container {
+    width:100%;
+    height:auto;
+    background-image: url(../images/bg-home-eduma-03.webp);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding:8rem 0;
+}
+#video {
+    width:60%;
+    margin:auto;
+    background:white;
+    padding:2rem;
+    border-radius:1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+    box-shadow: 0 0 20px 5px rgba(117, 117, 117, 0.308);
+}
+video {
+    width:100%;
+    height:50%;
+    margin:auto;
+    border-radius:1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+}
+.selling-education-theme {
+    width:100%;
+    text-align: center;
+    margin:5rem 0;
+}
+.selling-education-theme > h3 {
+    font-size: 50px;
+    text-transform: capitalize;
+    margin:2rem 0;
+    color:#31363b;
+    font-weight:700;
+    font-family: 'Poppins';
+}
+.selling-education-theme i {
+    color:#ffb606;
+}
+/* ---------------------------------------floating-boxes------------------------------- */
+.floating-boxes {
+    width:100%;
+    padding:1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:350px;
+    margin:-125px auto -175px;
+    z-index:5;
+    position:relative;
+}
+.floating-boxes > div {
+    width:23.5%;
+    height: 100%;
+    background-color:white;
+    border-radius:2rem;
+    -webkit-border-radius:2rem;
+    -moz-border-radius:2rem;
+    -ms-border-radius:2rem;
+    -o-border-radius:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0 0 3px 0 rgba(122, 122, 122, 0.397);
+    padding:1rem;
+    position:relative;
+}
+.floating-boxes > div img, .floating-boxes > div span {
+    z-index:20;
+    margin:10px auto;
+    text-align: center;
+    font-size:2rem;
+    font-family: nunito;
+    transition:0.4s ease-in-out;
+    -webkit-transition:0.4s ease-in-out;
+    -moz-transition:0.4s ease-in-out;
+    -ms-transition:0.4s ease-in-out;
+    -o-transition:0.4s ease-in-out;
+}
+.floating-boxes > div .hidden {
+    position:absolute;
+    top:5;
+    left:5;
+    width:90%;
+    height:90%;
+    border-radius:1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+    z-index:26;
+    transition:0.4s ease-in-out;
+    -webkit-transition:0.4s ease-in-out;
+    -moz-transition:0.4s ease-in-out;
+    -ms-transition:0.4s ease-in-out;
+    -o-transition:0.4s ease-in-out;
+}
+.floating-boxes > div:hover .hidden {
+    background-color:rgba(128, 128, 128, 0.055);
+}
+.floating-boxes > div img:hover {
+    transform:scale(1.15);
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+}
+/* ------------------------------------------------premium Demos---------------------------------------- */
+.premium-demos {
+    width:100%;
+    padding:15rem 0 30rem;
+    background-image: url(../Images/bg-home-eduma-4.webp);
+    background-size: cover !important;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    z-index:1;
+}
+.premium-demos .demos-head {
+    width:460px;
+    height:400px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-family: poppins;
+    flex-wrap: wrap;
+}
+.demos-head h2 {
+    line-height:120px;
+    font-size:10rem;
+    text-shadow:0 0 15px rgba(75, 75, 75, 0.493);
+}
+.demos-head span {
+    align-self: flex-end;
+    width:8.5rem;
+    background-color:black;
+    padding:.5rem 0;
+    border-radius:1.5rem;
+    text-align: center;
+    font-family: nunito;
+    font-weight:bold;
+    text-transform: capitalize;
+    font-size:1.3rem;
+    color:orange;
+    -webkit-border-radius:1.5rem;
+    -moz-border-radius:1.5rem;
+    -ms-border-radius:1.5rem;
+    -o-border-radius:1.5rem;
+}
+.demos-head h3 {
+    font-size:4rem;
+    text-align: center;
+    text-shadow:0 0 10px rgba(75, 75, 75, 0.493);
+    line-height:55px;
+    margin-bottom:2.5rem;
+}
+.demos-head p {
+    font-size:1.3rem;
+    text-shadow:0 0 10px rgba(75, 75, 75, 0.493);
+}
+
+.demos-list {
+    width:800px;
+    margin-top:4rem;
+}
+.demos-list ul {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+.demos-list ul li a {
+    color:white;
+    font-family: nunito;
+    font-size:1.5rem;
+    font-weight:bold;
+    position:relative;
+}
+.demos-list ul li .active::after {
+    content:"";
+    width:100%;
+    height:2px;
+    background-color:white;
+    position: absolute;
+    bottom:-0.3rem;
+    left:0;
+}
+.all-demos {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:3rem 0;
+    justify-content: center;
+    position:relative;
+}
+.all-demos > div {
+    width:31% !important;
+    margin:0 10px 3rem;
+    background-color:white;
+    padding:2rem;
+    border-radius:1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+    text-align: center;
+    cursor:pointer;
+    position:relative;
+}
+.all-demos > div .img {
+    position:relative;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+
+.all-demos > div .img::before {
+    content:"";
+    width:100%;
+    height:99.4%;
+    border-radius:10px;
+    background-color:black;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:0.4s ease-in-out    ;
+    -webkit-transition:0.4s ease-in-out    ;
+    -moz-transition:0.4s ease-in-out    ;
+    -ms-transition:0.4s ease-in-out    ;
+    -o-transition:0.4s ease-in-out    ;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+
+.all-demos > div img {
+    width:100%;
+    max-width:100%;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+.all-demos > div h3 {
+    text-transform: capitalize;
+    font-family: nunito;
+    font-size:1.8rem;
+    font-weight:500;
+    margin-top:2rem;
+    transition:0.4s ease-in-out;
+    -webkit-transition:0.4s ease-in-out;
+    -moz-transition:0.4s ease-in-out;
+    -ms-transition:0.4s ease-in-out;
+    -o-transition:0.4s ease-in-out;
+}
+.hidden-search {
+    width:3rem;
+    position:absolute;
+    top:25%;
+    z-index:10;
+    opacity:0;
+    left:50%;
+    transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    -o-transform:translateX(-50%);
+    transition:0.4s ease-in-out;
+    -webkit-transition:0.4s ease-in-out;
+    -moz-transition:0.4s ease-in-out;
+    -ms-transition:0.4s ease-in-out;
+    -o-transition:0.4s ease-in-out;
+} 
+.all-demos > div:hover .img::before {
+    opacity:0.3;
+}
+.all-demos > div:hover h3 {
+    color:white;
+}
+.all-demos > div:hover {
+    background-image: linear-gradient(70deg,#007aff,rgb(0, 207, 155) );
+    box-shadow:0 0 20px rgba(124, 124, 124, 0.281);
+}
+.all-demos > div:hover .hidden-search {
+    opacity:1;
+    top:40%;
+}
+.premium-demos::after {
+    content:"This Education WordPress Theme";
+    width:30%;
+    min-width:460px;
+    font-size:3rem;
+    font-weight:bold;
+    color:white;
+    position:absolute;
+    bottom:15rem;
+    left:5rem;
+    font-family: 'Poppins';
+    line-height:4rem;
+    z-index: 11;
+}
+.premium-demos::before {
+    content:"is made with full mobile support";
+    width:fit-content;
+    font-size:1.5rem;
+    color:white;
+    position:absolute;
+    bottom:11rem;
+    left:5rem;
+    font-family: 'Poppins';
+    line-height:3.5rem;
+    z-index:11;
+}
+.after-demos {
+    position:absolute;
+    bottom: -5.5%;
+    right:1rem;
+    z-index: 10 !important;
+}
+/* ---------------------------------------- lms-plugin------------------------------ */
+.lms-plugin {
+    width:100% !important;
+    background:url(../Images/bg-home-eduma-05.webp);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+    padding:30rem 3rem 5rem;
+    position:relative;
+}
+.lms-plugin .learnpress {
+    position:absolute;
+    left:0;
+    top:20rem;
+    padding:10px 3.5rem 10px 5rem;
+    color:white;
+    font-size:3.5rem;
+    font-weight:bold;
+    background:#1e3296;
+    border-top-right-radius:3.5rem;
+    border-bottom-right-radius:3.5rem;
+}
+.lms-plugin h4 {
+    color:white;
+    font-family: 'Nunito';
+    font-size:3rem;
+    padding:0 0 3rem;
+    font-weight:normal;
+}
+.lms-plugin p {
+    color:white;
+    font-family: 'Nunito';
+    font-size:1.3rem;
+    line-height:2rem;
+}
+.first-plugin {
+    padding-right:1rem;
+}
+
+.lms-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top:3rem;
+}
+.lms-container > div {
+    width:48%;  
+}
+.lms-container .plugin-icons {
+    text-align: center;
+}
+.plugin-icons > div {
+    display: flex;
+    justify-content: center;
+}
+.plugin-icons > div:not(:first-of-type) {
+    margin-top:-1rem;
+}
+.plugin-icons > div a {
+    padding:0 22px 0 0;
+}
+.plugin-icons > div img {
+    cursor:pointer;
+    transition:0.3s ease-in-out;
+    -webkit-transition:0.3s ease-in-out;
+    -moz-transition:0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -o-transition:0.3s ease-in-out;
+}
+.plugin-icons > div img:hover {
+    transform:scale(1.15);
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+}
+.progress {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:-8rem !important;
+}
+.progress > div {
+    display: flex;
+    flex-direction: column;
+}
+.solid-circle {
+    fill:white;
+}
+.progress {
+    margin-top: 3rem;
+}
+.progress > div{
+    position: relative;
+}
+.progress p {
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:black;
+    transform:translate(-50%, 20%);
+    -webkit-transform:translate(-50%, 20%);
+    -moz-transform:translate(-50%, 20%);
+    -ms-transform:translate(-50%, 20%);
+    -o-transform:translate(-50%, 20%);
+    font-size:2rem;
+}
+.progress span {
+    color:white;
+    text-transform: capitalize;
+    font-size:1.2rem;
+    font-weight:600;
+    margin-bottom:1rem;
+}
+
+.incomplete-circle1 , .incomplete-circle2, .incomplete-circle3 {
+    fill:transparent;
+    stroke:#ffb606;
+    stroke-width:10px;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    transform:rotate(-97deg);
+    -webkit-transform:rotate(-97deg);
+    -moz-transform:rotate(-97deg);
+    -ms-transform:rotate(-97deg);
+    -o-transform:rotate(-97deg);
+    transform-origin: center;
+}
+.incomplete-circle1 {
+    stroke-dasharray: 450;
+}
+.incomplete-circle2 {
+    stroke-dasharray: 410;
+}
+.incomplete-circle3 {
+    stroke-dasharray: 500;
+}
+.lms-plugin .button {
+    width:160px;
+    padding:1rem 0;
+    background-color:white;
+    color:black;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    border:none;
+    text-align:center;
+    margin:6rem auto 2rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s ease-in-out;
+    -webkit-transition:0.3s ease-in-out;
+    -moz-transition:0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -o-transition:0.3s ease-in-out;
+}
+.lms-plugin .button:hover {
+    background-color:#fd7e14;
+}
+/* Start Elmentor Section */
+.elementor-container {
+    width:100%;
+    max-width:100%;
+    padding-bottom:4rem;
+    background-image: url(../Images/bg-home-eduma-06.webp);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.float-right {
+    width:100%;
+    direction: rtl;
+    padding:8rem 0;
+}
+.float-right div {
+    color:white;
+    font-weight:bold;
+    font-size:4rem;
+    width:300px;
+    min-width:31%;
+    background-color:#332c89;
+    padding:14px 0 10px 50px;
+    border-top-left-radius:50px;
+    border-bottom-left-radius:50px;
+    text-align: left;
+}
+.elementor-content {
+    display: flex;
+    width:95%;
+    max-width: 95%;
+    margin:auto;
+}
+.elementor-content .left-section {
+    flex:1;
+}
+.elementor-content .left-section img {
+    width:100%;
+}
+.elementor-content .text {
+    width:45%;
+    max-width:45%;
+    padding-left:4rem;
+}
+.elementor-content .text p {
+    color:white;
+    font-size:1.4rem;
+    line-height: 2rem;
+    font-family:'Nunito';
+    text-align:right;
+}
+.elementor-content .text p span {
+    color:#ffb606;
+}
+.low-opacity-text {
+    margin-top:3rem;
+    color:#7179ac;
+    line-height:2rem;
+    font-family: 'Nunito';
+    font-size:1.4rem;
+    text-align:right;
+}
+/* End Elementor Section */
+/* Start Customize Section */
+
+.customize-container, .customize2-container {
+    width:100%;
+    padding-bottom:2rem;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:space-around;
+    padding:6rem 0;
+}
+.customize-container {
+    background-image:url(../Images/bg-elementor-02.webp);
+}
+
+
+.customize-container > div:first-of-type {
+    width:35%;
+}
+.customize-container > div:last-of-type {
+    width:50%;
+}
+.customize-container .theme-image img, .customize2-container .theme-image img {
+    width:100%;
+    max-width:100%;
+}
+.premium-widgets .theme-image img {
+    width:140% !important;
+}
+.customize-container h3, .customize2-container h3 {
+    text-transform: capitalize;
+    font-size:2.2rem;
+    font-family: 'Poppins';
+    padding:4rem 0 2rem;
+    font-weight:600;
+}
+.customize-container p , .customize2-container p {
+    font-size:1.1rem;
+    line-height: 1.7rem;
+    margin-bottom:2rem;
+}
+.theme-items {
+    display: flex;
+    line-height:2.5rem;
+    font-size:1.1rem;
+}
+.theme-items > div {
+    margin-right:5rem;
+}
+.theme-items > div div {
+    padding-left:2rem;
+    position:relative;
+}
+.theme-items > div div::before {
+    content:"";
+    width:24px;
+    height:17px;
+    background-image: url(../Images/list-icon.webp);
+    position: absolute;
+    bottom:10px;
+    left:0;
+    background-position:-130px -34px;
+    background-repeat: no-repeat;
+}
+
+.customize2-container > div:first-of-type {
+    width:50%;
+}
+.customize2-container > div:last-of-type {
+    width:35%;
+}
+/* End Customize Section */
+
+/* Start Demo Installer */
+
+.demo-installer-container {
+    width:100%;
+    background-image: url(../Images/bg-home-eduma-10.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:6rem 1rem;
+}
+.demo-installer {
+    width:95%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.demo-installer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:25%;
+}
+
+.demo-installer .first-section > div:not(:nth-child(2)) {
+    margin-left:7rem;
+}
+.demo-installer .last-section > div:not(:nth-child(2)) {
+    margin-right:14rem;
+}
+.demo-installer .box{
+    width: 70%;
+    background-color:white;
+    padding:2rem;
+    border-radius:1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:4rem;
+}
+.demo-installer .box a {
+    text-align: center;
+    color:black;
+    font-size:1.1rem;
+    line-height:2rem;
+}
+.demo-installer p {
+    text-align: center;
+    font-family: 'Nunito';
+    font-weight:500;
+}
+.demo-installer img {
+    margin-top:15px;
+}
+.center-text {
+    width:45% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.center-text * {
+    margin-bottom:2rem;
+    color:white;
+}
+.center-text h2 {
+    font-size:4rem;
+    text-align:center;
+    text-shadow:1px 12px 15px #57565657;
+}
+.center-text span {
+    font-size:1.4rem;
+}
+/* End Demo Installer */
+
+/* Start Customer Service */
+
+.customer-service {
+    width:100%;
+    background-image:url(../Images/bg-home-eduma-07.webp);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content:space-around !important;
+    align-items: flex-start;
+    padding:6rem 2rem 3rem;
+}
+
+.customer-left-section {
+    width:fit-content;
+    max-width:65%;
+}
+.customer-left-section .left-float {
+    color:white;
+    font-weight:bold;
+    font-size:50px;
+    width:550px;
+    min-width:31%;
+    background-color:#acc527;
+    padding:20px 50px 20px 0;
+    border-top-right-radius:50px;
+    border-bottom-right-radius:50px;
+    text-align: right;
+    margin-left:-2rem;
+}
+.customer-left-section div:not(.left-float) {
+    margin-left:4rem
+}
+.customer-left-section > div:nth-of-type(2) {
+    color:white;
+    font-size:1.8rem;
+    margin-top:5rem;
+    margin-bottom:5rem;
+    
+}
+.users-feedback {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.users-feedback > div > div {
+    width:100%;
+    padding:25px;
+    cursor:pointer;
+    transition:0.3s ease-in-out;
+    -webkit-transition:0.3s ease-in-out;
+    -moz-transition:0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -o-transition:0.3s ease-in-out;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+.users-feedback > div > div:hover {
+    background-color:rgba(221, 221, 221, 0.226);
+}
+.users-feedback > div {
+    width:90%;
+    height:auto;
+    background-color:white;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    overflow:hidden;
+    margin-bottom:4rem;
+    display: flex;
+    flex-direction: column;
+    padding:15px;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom:2rem;
+}
+.profile > img {
+    margin-right:20px;
+}
+.profile .name-rate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height:2.5rem;
+    font-size:1.6rem;
+    font-weight: 600;
+}
+.profile .rate img {
+    width:18px;
+    max-width:18px;
+}
+.feedback {
+    color:#5b5a5a;
+    line-height:2rem;
+    font-size:1.2rem;
+}
+
+/* users trust eduma */
+.users-trust {
+    height:800px;
+    width:100%;
+    background-image:url(../images/bg-home-eduma-08.webp);
+    background-size:140%;
+    background-repeat:no-repeat;
+    position:relative;
+    background-position: center;
+    z-index:-1;
+    margin-top:-8%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.users-trust > div {
+    width:fit-content;
+    margin:0 auto 2rem;
+}
+.users-trust > div:first-child {
+    font-size:8rem;
+    font-family:'Poppins';
+    font-weight:700;
+    font-size:150px;
+    color:transparent;
+    background-image:url(../images/bg-30000.jpg);
+    background-position:center;
+    -webkit-background-clip:text;
+}
+.users-trust > div:nth-child(2) {
+    font-size:1.8rem;
+    font-family: 'Poppins';
+    font-weight:600;
+    color:transparent;
+    background-image:url(../images/bg-30000.jpg);
+    background-position:center;
+    -webkit-background-clip:text;
+}
+.users-trust > div:last-of-type {
+    text-transform:uppercase;
+    color:white;
+    background-image:linear-gradient(to left, rgb(255, 153, 0), orange);
+    width:200px;
+    padding:22px 20px;
+    font-size:1.4rem;
+    font-weight:600;
+    text-align:center;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    margin-top:3rem;
+    position:relative;
+}
+.users-trust > div:last-child::before {
+    content:"";
+    width:114px;
+    height:80px;
+    position:absolute;
+    top:0;
+    left:-80px;
+    background-image: url(../Images/arrow-02.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Social Media */
+.social-media {
+    width:95%;
+    height:500px;
+    background-image: linear-gradient(180deg,rgba(255,255,255,0) 0%,#f0f6fc 48%);
+    margin:auto;
+    margin-top:-250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:relative;
+}
+.social-media::after {
+    content:"";
+    width:140px;
+    height:118px;
+    background-image:url(../Images/icon-07.webp);
+    background-size:cover;
+    position:absolute;
+    left:8%;
+    bottom:-70px;
+}
+.social-media h4 {
+    font-family:'Nunito';
+    font-size:28px;
+    padding:2rem;
+    position:relative;
+}
+.social-media h4::after {
+    content:"";
+    width:124px;
+    height:115px;
+    background-image:url(../images/icon-08.webp);
+    background-size:cover;
+    position:absolute;
+    right:-124px;
+    top:-90px;
+}
+.social-media p {
+    color:#5b5a5a;
+    text-align:center;
+    width:70%;
+    font-size:20px;
+    line-height:2rem;
+    font-family:'Nunito';
+}
+.social-icons {
+    position:absolute;
+    width:750px;
+    height:100px;
+    left:300px;
+    bottom:0;
+    transform:translateY(50%);
+    -webkit-transform:translateY(50%);
+    -moz-transform:translateY(50%);
+    -ms-transform:translateY(50%);
+    -o-transform:translateY(50%);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.social-icons > div {
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* last-section */
+.last-sec {
+    width:100%;
+    max-width: 100%;
+    height:950px;
+    background-image: url(../images/bg-home-eduma-09.webp);
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -2;
+    margin-top:-250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:22%;
+}
+.last-sec img {
+    max-width:90%;
+}
+
+/* End Customer Service */

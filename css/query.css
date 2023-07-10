@@ -1,0 +1,565 @@
+
+@media (max-width:1200px) {
+
+    header {
+        padding-left:10%;
+    }
+    header .buy-now {
+        display: none;
+    }
+    header > div {
+        width:80% !important;
+    }
+    /* -----------------------------------------buy-eduma-------------------------------------------- */
+    .buy-eduma {
+        margin:-5rem 15rem 0 auto;
+    }
+    .elementor-content {
+        width:1100px;
+    }
+    .demo-installer .box {
+        width:100%;
+    }
+    .all-demos {
+        width:100%;
+    }
+    .all-demos > div {
+        width:45% !important;
+    }
+    .after-demos img {
+        width:100%;
+        max-width: 100%;
+    }
+    /* ---------------------------------------lms-plugin----------------------------------------*/
+    .lms-plugin {
+        padding-top:50rem !important; 
+    }
+    .learnpress {
+        top:40rem !important;
+        max-width:60% !important;
+        font-size:2rem !important; 
+        padding-left:2rem !important;
+    }
+    /* -------------------------------------plugin-icons---------------------------------------- */
+    .plugin-icons > div {
+        justify-content: space-evenly;
+    }
+    .first-third-plugin-icon{
+        overflow:hidden;
+        padding:0 13%;
+    }
+    .first-third-plugin-icon a {
+        width:30%;
+    }
+    .first-third-plugin-icon a img , .second-plugin-icon a img {
+        width:100%;
+    }
+    .second-plugin-icon a {
+        width:22%;
+    }
+    .plugin-icons > div a {
+        padding:0;
+    }
+    /* -----------------------------------------progress-------------------------------------------- */
+    .progress {
+        transform:scale(0.85)    ;
+        -webkit-transform:scale(0.85)    ;
+        -moz-transform:scale(0.85)    ;
+        -ms-transform:scale(0.85)    ;
+        -o-transform:scale(0.85)    ;
+        margin-top:0 !important;
+    }
+    /* -------------------------------------------elementor Content------------------------------------- */
+    .float-right > div {
+        font-size:3rem;
+    }
+    .customize2-container .theme-items > div {
+        margin-right:2.5rem;
+    }
+    /* --------------------------------------------premium-widgets ------------------------*/
+    .premium-widgets .theme-items > div {
+        margin:0;
+    }
+    /*---------------------------------------------social-icons------------------------------ */
+    .social-icons {
+        width:70%;
+        left:15%;
+        z-index:4;
+    }
+    .last-section {
+        height:500px;
+    }
+}
+
+/* --------------------------------1000px---------------------------------------- */
+@media (max-width:1000px) {
+    .section1-container {
+        background-position: 0 0 !important;
+        background-size:200vw !important;
+    }
+    header {
+        padding:0;
+        justify-content: center;
+    }
+    header .ul {
+        display: none;
+    }
+    header #logo span {
+        display: block;
+        width:2rem ;
+        height:2px ;
+        background-color:white;
+        position: relative;
+    }
+    #logo {
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center !important;
+    }
+    header #logo span::before {
+        content:"";
+        width:100%;
+        height:2px;
+        position:absolute;
+        top:10px;
+        left:0;
+        background-color:white;
+    }
+    header #logo span::after {
+        content:"";
+        width:100%;
+        height:2px;
+        position:absolute;
+        bottom:10px;
+        left:0;
+        background-color:white;
+    }
+    .demos-list {
+        width:80% !important;
+        overflow:hidden;
+    }
+    .demos-list ul{
+        width:90%;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .demos-list ul li {
+        margin-right:1rem;
+        margin-top:1rem;
+    }
+    /* ---------------------------------------------buy-eduma---------------------------------------------- */
+    .one-img img {
+        transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+        -o-transform: scale(0.6);
+    }
+    .one-img {
+        margin-right:-4rem;
+    }
+
+    /* ---------------------------------------plugins-container------------------------------------------- */
+    .plugins-container {
+        flex-direction: column;
+        padding-right:0;
+        padding-left:0;
+    }
+
+    .plugins-container > div {
+        width:100% !important;
+    }
+    .plugins-container .plugins > div {
+        width:45%;
+    }
+    .plugins {
+        justify-content: space-evenly !important;
+        padding-top:5rem;
+    }
+    .plugins-container .description {
+        padding:0 2rem;
+    }
+    .plugins > div:first-of-type {
+        position:relative;
+    }
+    .plugins > div:first-of-type::before {
+        content:"";
+        width:80%;
+        height:5px;
+        background-color:#ffb606;
+        border-radius:5px;
+        -webkit-border-radius:5px;
+        -moz-border-radius:5px;
+        -ms-border-radius:5px;
+        -o-border-radius:5px;
+        position:absolute;
+        top:0;
+        left:-1rem;
+    }
+    .description p::after {
+        display: none;
+    }
+    #video {
+        width:95%;
+    }
+    .floating-boxes {
+        flex-wrap: wrap;
+        
+    }
+    .floating-boxes > div {
+        width: 47%;
+        margin-bottom:2rem;
+
+    }
+    .premium-demos {
+        padding-top:10rem !important;
+        margin-top:25rem;
+    }
+    .premium-demos::after , .premium-demos::before {
+        width:90%;
+        left:5%;
+        line-height: 2.6rem;
+    }
+    .premium-demos::before {
+        bottom:9rem;
+    }
+    .after-demos {
+        bottom:-4%;
+    }
+
+    /* ---------------------------------------lms-plugin---------------------------------------- */
+    .lms-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lms-plugin {
+        padding-left:1rem;
+        padding-right:1rem;
+        padding-top:35rem !important;
+    }
+    .learnpress {
+        top:25rem !important;
+    }
+    .first-plugin {
+        width:100% !important;
+    }
+    .plugin-icons {
+        width:fit-content !important;
+        margin-top:2rem;
+        order:2;
+    }
+    .plugin-icons a {
+        width:fit-content !important;
+    }
+    .plugin-icons a:not(:last-of-type) {
+        padding-right:22px;
+    }
+    .plugin-icons a img {
+        width:100% !important;
+    }
+    .progress {
+        margin-top:2rem !important;
+        width:100% !important;
+        transform:scale(1)    ;
+        -webkit-transform:scale(1)    ;
+        -moz-transform:scale(1)    ;
+        -ms-transform:scale(1)    ;
+        -o-transform:scale(1)    ;
+    }
+    /* ------------------------------------ elementor-content -------------------------------------------------- */
+    .elementor-content {
+        flex-direction: column;
+    }
+    .elementor-content .text {
+        width:100% !important;
+        max-width: 100% !important;
+        padding-top:1rem;
+        padding-left:0;
+    }
+    .float-right {
+        padding-bottom:4rem;
+    }
+    /* ------------------------------------------customize-container----------------------------------------- */
+    .customize-container , .customize2-container {
+        flex-direction: column;
+        padding:2rem;
+    }
+    .theme-customize {
+        order:2;
+        width:96% !important;
+    }
+    .theme-image {
+        width:70% !important;
+        align-self: flex-end;
+    }
+    .customize2-container .theme-image {
+        align-self: flex-start;
+    }
+    .theme-items {
+        width: 80% !important;
+        justify-content: space-between;
+    }
+    /* -------------------------------------------demo-installer------------------------------------------------- */
+    .demo-installer {
+        flex-direction:column ;
+        align-items: center;
+    }
+    .demo-installer > div {
+        display: flex;
+        justify-content: space-between !important;
+        flex-direction: row;
+        width:98% !important;
+        margin:0 !important;
+    }
+    .first-section > div {
+        margin-left:0 !important;
+        width:fit-content !important;
+        max-width:31%;
+    }
+    .demo-installer .last-section > div:not(:nth-child(2)) {
+        margin-right:0;
+    }
+    .center-text {
+        flex-direction: column !important;
+        width:80%;
+    }
+    /* ----------------------------------------------------customer-service---------------------------------- */
+    .customer-service {
+        flex-direction: column;
+        
+    }
+    .customer-service > div {
+        width:100%;
+    }
+    .users-feedback {
+        align-self: center;
+    }
+    .users-feedback > div {
+        width:100% !important;
+    }
+    .customer-left-section .left-float {
+        width:250px !important;
+        font-size:25px;
+        padding:10px 25px 10px 0;
+        border-top-right-radius:25px;
+        border-bottom-right-radius:25px;
+    }
+    .customer-left-section > div img {
+        width:100%;
+        max-width:100%;
+    }
+    .social-media h4::after {
+        right:0;
+    }
+    .social-icons > div {
+        transform:scale(0.6)    ;
+        -webkit-transform:scale(0.6)    ;
+        -moz-transform:scale(0.6)    ;
+        -ms-transform:scale(0.6)    ;
+        -o-transform:scale(0.6)    ;
+        aspect-ratio: 1 / 1 !important;
+    }
+    .social-icons > div:not(:first-of-type) {
+        margin-left:-2rem;
+    }
+    .social-icons {
+        justify-content: center !important;
+        max-width:70%;
+    }
+}
+/* ------------------------------------------------768px-------------------------------------------------------- */
+
+@media (max-width:768px) {
+    #logo > div:last-of-type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        width:6rem; 
+    }
+    .hidden-list-icon {
+        display: block;
+        margin-right:15%;
+    }
+    .section1-container {
+        height:fit-content !important;
+    }
+    .buy-eduma {
+        margin:auto;
+        flex-direction: column;
+        justify-content: center;
+        width:100% !important;
+    }
+    .one-img {
+        margin:0 0 0 5rem !important;
+        display: flex;
+        justify-content: center;
+    }
+    .buy-eduma .content {
+        padding:0 !important;
+        text-align: center;
+    }
+    .buy-eduma .content p {
+        font-size:2rem;
+    }
+    .buy-eduma .content h1 {
+        font-size:3rem;
+        display: inline-block;
+    }
+    .buy-btn::after {
+        display: none;
+    }
+    .buy-btn {
+        margin:2rem auto;
+    }
+    .content > img:first-of-type {
+        width:17%;
+        left:25%;
+        top:15%;
+        opacity:0.5;
+    }
+    .content > img:nth-of-type(2) {
+        top:35%;
+        right:10%;
+        opacity:0.5;
+    }
+    .content > img:nth-of-type(3) {
+        top:85%;
+        right:10%;
+        opacity:0.5;
+    }
+    .devices > div:first-child {
+        display: none;
+    }
+    .plugins {
+        padding-top:4rem;
+    }
+    .plugins > div:first-of-type::before  {
+        top:-2rem;
+    }
+    /* -------------------------------after-demos------------------------------- */
+    .premium-demos::after {
+        font-size:32px;
+
+    }
+    /* ------------------------------progress----------------------------------- */
+    .progress {
+        transform:scale(0.83)    ;
+        -webkit-transform:scale(0.83)    ;
+        -moz-transform:scale(0.83)    ;
+        -ms-transform:scale(0.83)    ;
+        -o-transform:scale(0.83)    ;
+    }
+    /* ------------------------------elementor-content-------------------------- */
+    .elementor-content .text p , .low-opacity-text {
+        text-align: left;
+    }
+    .demos-head span {
+        position: relative;
+        right:2rem;
+    }
+    /* ------------------------------------------customize-container----------------------------------------- */
+    .theme-image {
+        width:100% !important;
+        
+    }
+    /* ----------------------------------------------demo-installer--------------------------------------------- */
+    .first-section {
+        flex-direction: column !important;
+        width:100%;
+    }
+    .first-section > div  {
+        width:100% !important;
+        max-width: 100%;
+    }
+    .box:first-of-type {
+        margin-top:0 !important;
+    }
+    .social-media h4::after {
+        display: none !important;
+    }
+    .users-trust {
+        margin-top:-20%;
+        height:600px;
+    }
+    .users-count {
+        font-size:60px !important;
+    }
+    .social-media::after {
+        display: none;
+    }
+}
+
+/* ---------------------------width-480px-------------------------------- */
+@media (max-width:490px) {
+
+    .section1-container {
+        height:1000px !important;
+        background-size:cover !important;
+    }
+    .plugins > div {
+        width:95% !important;
+    }
+    .description {
+        padding: 0 1rem !important;
+    }
+    .plugins > div:first-of-type::before {
+        width:20%;
+        left:0;
+    }
+    .floating-boxes > div {
+        width:97%;
+    }
+    .premium-demos {
+        padding-top:10rem !important;
+        margin-top:70rem;
+    }
+    .all-demos > div {
+        width:97% !important; 
+    }
+    .after-demos {
+        bottom:-1%;
+    }
+     /* ------------------------------progress----------------------------------- */
+    .progress {
+        transform:scale(0.9);
+        flex-direction: column;
+        align-items: center;
+        -webkit-transform:scale(0.9);
+        -moz-transform:scale(0.9);
+        -ms-transform:scale(0.9);
+        -o-transform:scale(0.9);
+    }
+    /* -------------------------------learnpress----------------------------------- */
+    .lms-plugin {
+        padding-top: 15rem !important;
+    }
+    .learnpress {
+        top:12rem !important;
+    }
+    /* -------------------------------float-right ----------------------------------- */
+    .float-right > div {
+        font-size: 2.5rem;
+        width:250px;
+    }
+    .demos-head span {
+        right:4rem;
+    }
+    .theme-items {
+        flex-wrap: wrap;
+    }
+    .social-icons > div {
+        width:70px;
+        height:70px;
+    }
+    .social-icons > div img {
+        max-width:90%;
+    }
+    .social-icons > div:not(:first-of-type) {
+        margin-left:-1rem !important;
+    }
+    .center-text h2 {
+        font-size: 3rem;
+    }
+}
